@@ -1,7 +1,9 @@
 from django.forms import ModelForm
-from.models import *
+from django.contrib.auth.forms import UserCreationForm
+from. models import *
 class UsuarioPruebaForm(ModelForm):
+
+    class Meta:
+        model = PruebaUser
+        fields = ['usuario_pruebas','nombre_pruebas',]
 	
-	class Meta:
-		model = PruebaUser
-		include = ('usuario_pruebas','nombre_pruebas',)

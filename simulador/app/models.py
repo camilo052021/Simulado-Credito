@@ -14,4 +14,4 @@ class PruebaUser(models.Model):
         verbose_name_plural = 'Usuarios Pruebas'
 
     def __str__(self):
-        return f'Ususario Prueba {self.usuario_pruebas}'
+        return f'Usuario {self.nombre_pruebas}'
